@@ -1,5 +1,7 @@
 from inventory_report.product import Product
+import pytest
 
+@pytest.mark.dependency()
 def test_create_product() -> None:
     produto = Product(
         "1",
